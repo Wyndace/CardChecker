@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CardChecker</title>
+    <title>CardChecker | Wyndace's VueJS project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,7 +17,7 @@
         <!-- Поле для ввода НОМЕРА КАРТЫ -->
         <div class="number-container">
             <input :style="{backgroundColor: backInput, color: textColor}"
-                :class="{'input-ok': isOk, 'input-err': isErr}" v-model="number" type="text" placeholder="Номер карты">
+                :class="{'input-ok': isOk, 'input-err': isErr}" v-model="number" type="text" placeholder="Card number">
             <div :class="{'status-ok': isOk, 'status-err': isErr}" class="status"></div>
         </div>
 
@@ -25,7 +25,7 @@
         <div class="name-container">
             <input :style="{backgroundColor: backInput, color: textColor}"
                 :class="{'input-ok': isOkName, 'input-err': isErrName}" v-model="name" type="text"
-                placeholder="Имя держателя">
+                placeholder="Owner's name">
             <div :class="{'status-ok': isOkName, 'status-err': isErrName}" class=" status"></div>
         </div>
 
